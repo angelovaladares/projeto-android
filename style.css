@@ -23,11 +23,10 @@
 
 .cabecalho {
     height: 250px;
+    width: 100%;
     display: flex;
     background: linear-gradient(180deg, #09ce44, #10a123, #195e08);    
     padding-top: 20px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -194,6 +193,7 @@ a.externo:after {
     background-color: #195e08;
     color: white;
     margin: auto;
+    width: 100%;
 }
 
 .paragrafo-rodape {
