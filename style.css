@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url('../pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+
+    font-family: 'Bebas';
+    src: url('pacote-projeto-d010/fontes/BebasNeue-Regular.otf') format('opentype');
+}
+
+:root {
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas';
+    --font-android: 'Android';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabecalho {
+    height: 250px;
+    display: flex;
+    background: linear-gradient(180deg, #09ce44, #10a123, #195e08);    
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    gap: 40px;
+}
+
+.titulo-menu{
+    color: white;
+    font-family: 'Bebas', 'Times', 'serif';
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.356);
+    font-size: 3em;
+
+}
+
+.paragrafo-menu {
+    color: white;
+    font-family: var(--font-padrao);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.37);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.link-menu {
+    display: flex;
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+}
+
+.link-menu:hover {
+    background-color:#10a123;
+    color: #103a06;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #bdffd1;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    min-width: 450px;
+    max-width: 800px;
+}
+
+.titulo-pagina {
+    padding: 15px;
+    color:#195e08;
+    font-family: var(--font-destaque);
+    font-size: 2em;
+}
+
+.subtitulo {
+    background-image: linear-gradient(to right, #bdffd1, transparent);
+    color:#195e08;
+    font-family: var(--font-destaque);
+    margin: 0px 15px;
+    text-indent: 6px;
+}
+
+.paragrafo {
+    text-align: justify;
+    padding: 10px 15px 25px 15px;
+    font-family: var(--font-padrao);
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+.imagem {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.imagem-android {
+    display: flex;
+    margin: auto;
+}
+
+.link {
+    color:#00cf3e;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a.externo:after {
+    content: '\F517';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-secundario {
+    display: flex;
+    background-color: #103a06;
+    padding: 10px;
+    justify-content: center;
+    margin: 0px;
+    position: relative;
+    padding-bottom: 55%;
+}
+
+.video {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.container-terciario {
+    background-color: #bdffd1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.315);
+    margin: 15px;
+}
+
+.titulo-extra {
+    background-color: #10a123;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.lista-nomes-doces {
+    list-style-type: '\2714';
+    list-style-position: inside;
+    padding-left: 15px;
+    columns: 2;
+    font-family: var(--font-padrao);
+    line-height: 1.5em;
+}
+
+.paragrafo-extra {
+    padding: 15px;
+    font-family: var(--font-padrao);
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+.rodape {
+    background-color: #195e08;
+    color: white;
+    margin: auto;
+}
+
+.paragrafo-rodape {
+    font-family: var(--font-padrao);
+    font-size: bold;
+    text-align: center;
+    padding: 7px;
+    color: rgba(255, 255, 255, 0.637);
+    font-size: .8em;
+}
+
+.link-rodape {
+    color: white;
+    font-family: var(--font-padrao);
+}
+
